@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: frontend
+  resources:
+    static-locations: classpath:/static
+
+server:
+  port: 19873
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+    fetch-registry: true
